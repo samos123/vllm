@@ -1,6 +1,6 @@
 .. _on_cloud:
 
-Deploying and scaling up with KubeAI
+Deploying with KubeAI
 ================================================
 
 
