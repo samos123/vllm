@@ -115,7 +115,7 @@ Wait until the newly created model pod is in the Running and Ready state:
 
 You can access the model at ``$ENDPOINT/openai/v1/chat/completions``.
 
-Lets test the model using the OpenAI Python client:
+Lets test the model using the OpenAI Python client. Run the following Python script:
 
 .. code-block:: python
 
