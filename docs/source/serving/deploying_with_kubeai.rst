@@ -20,13 +20,6 @@ Prerequisites
 - You have a Kubernetes cluster.
 - You have `helm` installed.
 
-Verify that you have a Kubernetes cluster and `helm` installed:
-.. code-block:: console
-
-  kubectl get nodes
-  helm ls
-
-
 Install KubeAI
 --------------
 
