@@ -4,9 +4,10 @@ Deploying with KubeAI
 ================================================
 
 
-`KubeAI <https://github.com/substratusai/kubeai>` is a Kubernetes operator with built-in support for running and scaling vLLM instances.
+KubeAI (https://github.com/substratusai/kubeai) is a Kubernetes operator with built-in support for running and scaling vLLM instances.
 
 Features provided by KubeAI:
+
 - Autoscaling based on concurrent requests.
 - Scale from 0 without requiring any dependencies.
 - Single endpoint for all vLLM instances serving different models.
@@ -52,6 +53,7 @@ KubeAI provides a proxy service that sits in front of the vLLM instances. By def
 the KubeAI service is exposed within the Kubernetes cluster only.
 
 You can access the KubeAI service within the Kubernetes cluster on the following endpoints:
+
 - ``http://kubeai/openai/v1``
 - ``http://kubeai.{namespace}.svc.cluster.local/openai/v1``
 
