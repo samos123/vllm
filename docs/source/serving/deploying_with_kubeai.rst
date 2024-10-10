@@ -165,13 +165,13 @@ Lets test the model using the OpenAI Python client:
 
 Now let's run a benchmark using the vLLM benchmarking script:
 
-```bash
-git clone https://github.com/vllm-project/vllm.git
-cd vllm/benchmarks
-wget https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/resolve/main/ShareGPT_V3_unfiltered_cleaned_split.json
-python3 benchmark_serving.py --backend openai \
-    --base-url http://localhost:8000/openai \
-    --dataset-name=sharegpt --dataset-path=ShareGPT_V3_unfiltered_cleaned_split.json \
-    --model llama-3.2-11b-vision-instruct-l4 \
-    --seed 12345 --tokenizer neuralmagic/Llama-3.2-11B-Vision-Instruct-FP8-dynamic
-```
+.. code-block:: console
+
+  git clone https://github.com/vllm-project/vllm.git
+  cd vllm/benchmarks
+  wget https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/resolve/main/ShareGPT_V3_unfiltered_cleaned_split.json
+  python3 benchmark_serving.py --backend openai \
+      --base-url http://localhost:8000/openai \
+      --dataset-name=sharegpt --dataset-path=ShareGPT_V3_unfiltered_cleaned_split.json \
+      --model llama-3.2-11b-vision-instruct-l4 \
+      --seed 12345 --tokenizer neuralmagic/Llama-3.2-11B-Vision-Instruct-FP8-dynamic
