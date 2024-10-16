@@ -83,10 +83,10 @@ Create a file named `llama-3.2-11b-vision-instruct.yaml` with the following cont
     args:
       - --max-model-len=8192
       - --max-num-batched-token=8192
-      - --gpu-memory-utilization=0.99
+      - --gpu-memory-utilization=0.95
       - --enforce-eager
       - --disable-log-requests
-      - --max-num-seqs=16
+      - --max-num-seqs=8
     env:
       VLLM_WORKER_MULTIPROC_METHOD: spawn
     minReplicas: 1
